@@ -8,14 +8,6 @@ constants shiny_green 0 0 0 .1 .3 .8 0 0 0
 constants shiny_red .1 .3 .8 0 0 0 0 0 0
 
 push
-light a 0.5 0.75 1 255 0 0
-move 50 50 0
-rotate x 360 spinny
-rotate y 360 spinny
-tetra shiny_red 0 0 0 50
-pop
-
-push
 light a 0.5 0.75 1 255 0 0 
 move 100 50 0
 move 0 300 0 bouncy
