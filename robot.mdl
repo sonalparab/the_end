@@ -1,0 +1,56 @@
+ambient 50 50 50 
+light a 0.5 0.75 1 0 255 255
+constants shiny_blue 0 0 0 0 0 0 .1 .3 .8
+constants shiny_green 0 0 0 .1 .3 .8 0 0 0
+constants shiny_red .1 .3 .8 0 0 0 0 0 0 
+//BODY
+push
+move 250 250 0
+box -50 63 25 100 125 50
+light c 0.5 0.75 1 0 255 0
+//HEAD
+push
+move 0 175 0
+rotate y 90
+sphere shiny_green 0 0 0 50 
+pop
+//LEFT ARM
+push
+move -100 125 0
+rotate z -135
+rotate y 20
+box shiny_blue -40 0 40 40 100 80 
+//LEFT LOWER ARM
+push
+move -20 -100 0
+box -10 0 10 20 125 20
+pop
+pop
+//RIGHT ARM
+push
+move 100 125 0
+rotate z 135
+rotate y 20
+box shiny_green 0 0 40 40 100 80
+//RIGHT LOWER ARM
+push
+move 20 -100 0
+box -10 0 10 20 125 20
+pop
+pop
+light b 0.5 0.75 1 255 0 0 
+//LEFT LEG
+push
+move -100 -125 0
+rotate z -45
+rotate y 20
+box 0 0 40 50 120 80
+pop
+//RIGHT LEG
+push
+move 100 -125 0
+rotate z 45
+rotate y 20
+box shiny_red -50 0 40 50 120 80
+display
+save robot.png
